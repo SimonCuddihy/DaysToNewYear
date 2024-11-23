@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage ('GetProject') {
             steps {
-                git 'https://github.com/SimonCuddihy/DaysToNewYear.git'
+                git branch: 'main', url: 'https://github.com/SimonCuddihy/DaysToNewYear.git'
             }
         }
         stage ('build') {
